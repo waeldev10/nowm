@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+    
+    <header dir="rtl">
+        <nav>
+            <a href="price.html" class="active">
+                <span>اسعار الكروت</span>
+                <i class="fa-solid fa-dollar-sign"></i>
+            </a>
+            <a href="place.html">
+                <span>اماكن البيع</span>
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+            <a   id="openPopup">
+                <span>تواصل معنا</span>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div dir="rtl" id="popup" class="popup">
+        <div class="popup-content">
+            <h2>اتصل بنا</h2>
+            <div>
+                <p>
+                    <span>ادارة : </span>
+                    <a href="">77777777</a>
+                   </p>
+                   <p>
+                    <span>صيانة : </span>
+                    <a href="">77777777</a>
+                   </p>
+            </div>
+        
+            <button id="closeButton">إغلاق</button>
+        </div>
+    </div>
+
+    <script ype="text/javascript">
+  
+
+    </script>
+    <div class="content">
+
+        <article>
+
+            <div class="clock" id="clock">Loading...</div>  
+
+            <script type="text/javascript">
+                function refrClock()  
+                {  
+                    var d = new Date();  
+                    var s = d.getSeconds();
+                    var m = d.getMinutes();  
+                    var h = d.getHours();  
+                    var day = d.getDay();  
+                    var date = d.getDate();  
+                    var month = d.getMonth();  
+                    var year = d.getFullYear();  
+
+                    var days = new Array("الاحد","الاثنين","الثلاثاء","الاربعاء","الخميس","الجمعة","السبت");  
+                    var months = new Array("يناير","فبراير","مارس","ابريل","مايو","يونيو","يوليو","اغسطس","سبتمبر","اكتوبر","نوفمبر","ديسمبر");  
+                    var am_pm;  
+                    if (s < 10) 
+                    {
+                        s = "0" + s
+                    }  
+                    if (m < 10) 
+                    {
+                        m="0" + m
+                    }  
+
+                    if (h > 12) 
+                    {
+                        h -= 12;
+                        am_pm = "مساءً."
+                    }  
+                    else 
+                    {
+                        am_pm = "صباحاً."
+                    }  
+
+                    if (h < 10) 
+                    {
+                        h = "0" + h
+                    }  
+                    document.getElementById("clock").innerHTML = days[day] + "  " + date + " من " + months[month] + "  " + year + "   |   الساعة الان " + h + ":" + m + ":" + s + " " + am_pm; 
+                        setTimeout("refrClock()",1000);  
+                      
+
+                }  
+                refrClock();
+            </script>
+
+            <img class="img" src="assets/images/sad-icon-removebg-preview.webp" alt="">
+           
+            <h1>شبكة نيوم نت 1</h1>
+    
+            <div class="marque">
+                <marquee direction="right" onMouseOver="this.stop();" onMouseOut="this.start();" div class="gif">   
+                    <img width="50"  src="assets/images/new.gif" align="absmiddle"/> 
+                    سرعات تناسب جميع الاحجام وثبات في السرعات
+                    <img width="50"  src="assets/images/new.gif" align="absmiddle"/>
+                    يوجد حماية لمنع أختراق الحسابات
+                    <img width="50"  src="assets/images/new.gif" align="absmiddle"/> 
+                     ننصح بالاحتفاط بالكرت حتى ينتهي فلسنا مسؤولين عن نسيان الرمز 
+                    <img width="50"  src="assets/images/new.gif" align="absmiddle"/>
+                    أهلا بكم  في شبكة نيوم نت ودمتم سالمين
+                    <img width="50"  src="assets/images/new.gif" align="absmiddle"/> 
+                     نتمنى لكم قضاء اجمل واسعد الاوقات معنا و
+                     <img width="50"  src="assets/images/new.gif" align="absmiddle"/> 
+                </marquee>
+            </div>
+    
+            <form action="info.html">
+                <label for="">ادخل رقم الكرت</label>
+                <input type="text" />
+                <div>
+                    <input type="checkbox" /> 
+                    <label for="">تذكرني</label>
+                </div>
+             
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </article>
+
+    </div>
+
+    <footer dir="rtl">
+       <p>جميع الحقوق محفوظه لدى شبكة نيوم نت @2024</p>
+    </footer>
+
+
+ 
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

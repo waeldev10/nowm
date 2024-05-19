@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Almarai-ExtraBold;
+    src: url('../fonts/Almarai-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: Almarai-Bold;
+    src: url('../fonts/Almarai-Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: Almarai-Light;
+src: url('../fonts/Almarai-Light.ttf') format('truetype');
+}
+
+@font-face {
+font-family: Almarai-Regular;
+src: url('../fonts/Almarai-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: Almarai-Regular;
+    background-color: rgb(238, 238, 238);
+}
+
+.clock{
+    background-color: #b13636;
+    padding: 16px;
+    color: #fff;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.content,header,footer{
+    text-align: center;
+    width: 70%;
+    margin:20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+header nav a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border: .5px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin:0 5px;
+    color: #0d885f;
+    transition: all .5s ease-in-out;
+}
+header nav a:hover,.active{
+    background-color: #0d885f;
+    color: #fff;
+}
+
+header nav a span{
+    font-size: 18px;
+    margin:0 5px;
+}
+header nav a i{
+    font-size: 18px;
+    margin:0 5px;
+   
+}
+
+.content article{
+    width: 50%;
+    margin: auto;
+    border: .5px solid #eeeeee;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content .img{
+    width: 150px ;
+    height: 150px;
+}
+
+.marque{
+    border-radius: 8px;
+    margin: 16px 0;
+    padding:12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 1px rgb(17, 17, 17,.1);
+}
+
+form{
+
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+}
+form input:focus{
+    outline: none;
+}
+form div{
+    /* display: flex; */
+    align-items: center;
+}
+
+form div label{
+    margin: 10px;
+    margin-bottom: -10px;
+}
+form input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+form button{
+    width: 100%;
+    height: 50px;
+    background-color: #0d885f;
+    border-radius: 8px;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    font-family: Almarai-Bold;
+    cursor: pointer;
+}
+
+/* ================= info ============================ */
+.info article{
+    width: 100%;
+}
+.info form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info form button{
+    margin: 8px;
+}
+.info form button:nth-child(1){
+    background-color: #b13636;
+}
+.info form button:nth-child(2){
+    background-color: #0d885f;
+}
+
+.info article aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.info article aside .div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 0px 8px 1px rgb(17, 17, 17,.1); */
+    background-color: rgb(5, 18, 73,.1);
+    padding: 16px;
+    border-radius: 8px;
+    margin: 8px;
+    width: 100%;
+}
+
+.info article aside .div div{
+    margin: 0 16px;
+}
+.info article aside .div div p{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.info article aside .div div span{
+    margin: 8px 0;
+    font-size: 18px;
+    color: #0d885f;
+    font-family:  Almarai-Bold;
+}
+.info article aside .div i{
+    font-size: 24px;
+    color: #b13636;
+}
+
+/* ================================================== */
+
+/* ============== logout ========================= */
+.logout article div{
+    margin-bottom: 32px;
+}
+.logout article p{
+    font-size: 20px;
+    margin: 16px 0;
+    color: #b13636;
+    font-family: Almarai-Bold;
+}
+.logout article span{
+    font-size: 18px;
+    display: block;
+    margin: 16px 0;
+    font-family: Almarai-Light;
+}
+.logout form{
+    margin: 16px 0;
+}
+/* =============================================== */
+
+/* =============== price ========================= */
+.price article{
+    width: 100%;
+}
+.price article aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.price article aside div{
+    border: .5px solid rgb(13, 136, 95,.1);
+    width: 100%;
+    margin: 8px ;
+    padding: 16px;
+    border-radius: 8px;
+}
+.price article aside div div{
+    background-color: rgb(245, 245, 245,.7);
+    border: none;
+    margin: 0 auto;
+}
+.price article aside div h3{
+    font-size: 18px;
+    margin: 8px 0;
+}
+.price article aside div .p{
+    font-size: 20px;
+    color: #b13636;
+    font-family: Almarai-Bold;
+    margin: 8px 0;
+}
+.price article aside div .span{
+    color: #0d885f;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.price article aside div span{
+    font-size: 18px;
+    font-family: Almarai-Bold;
+    color: #111111;
+}
+.price article aside div a{
+ 
+    display: inline-flex;
+    align-items: center;
+    margin: 8px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px 20px;
+    background-color: rgb(177, 54, 54,.2);
+}
+.price article aside div a span{
+    font-size: 18px;
+    margin: 4px;
+    font-family: Almarai-Light;
+}
+.price article aside div a i{
+    font-size: 16px;
+    margin: 4px;
+    color: rgb(17, 17, 17,.7);
+}
+/* =============================================== */
+#popup {
+    display: none; /* إخفاء النافذة في البداية */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* لون التعتيم */
+    z-index: 100; /* ضمان ظهور النافذة فوق جميع العناصر الأخرى */
+    /* filter: blur(10PX); */
+}
+
+.popup-content {
+    text-align: center;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 800px;
+    border-radius: 8px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.popup-content div{
+    background-color: rgb(13, 136, 95,.1);
+    padding: 16px;
+    border-radius: 8px;
+}
+.popup-content h2{
+    border-bottom:.5px solid rgb(177, 54, 54,.2);
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+}
+.popup-content a{
+    text-decoration: none;
+    color: #111111;
+    font-family: Almarai-Bold;
+}
+.popup-content p{
+    margin: 16px 0;
+    font-size: 20px;
+}
+.popup-content span{
+    color: #0d885f;
+}
+#closeButton {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 32px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #b13636;
+    color: #fff;
+    font-family: Almarai-Bold;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+
+    .content,header,footer{
+        width: 94%;
+        margin:20px auto;
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    header nav a{
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        margin:0 5px;
+    }
+    
+    header nav a span{
+        margin: 0;
+        display: none;
+    }
+    header nav a i{
+        font-size: 20px;
+        margin:0 ;
+       
+    }
+
+    .content article{
+        width: 100%;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    
+    .content .img{
+        width: 100px ;
+        height: 100px;
+    }
+
+    form input{
+        margin: 16px auto;
+        padding: 16px;
+    }
+    
+    form input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+    }
+    
+    form button{
+        font-size: 16px;
+    }
+    /* ================= info ============================ */
+    
+    .info form{
+        flex-direction: column;
+    }
+    .info form button{
+        margin: 8px;
+    }
+
+    .info article aside{
+        flex-direction: column;
+        margin: 8px 0;
+    }
+    /* ===================================== */
+
+    /* =============== price ========================= */
+   
+    .price article aside{
+        flex-direction: column;
+    }
+    /* =============================================== */
+    
+}
+
+
+
+
+
+
+
+
+
+
