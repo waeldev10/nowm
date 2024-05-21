@@ -1,15 +1,39 @@
-const openButton = document.getElementById('openPopup');
-const popup = document.getElementById('popup');
-const closeButton = document.getElementById('closeButton');
+const openButtons = document.querySelectorAll('.openPopup');
+const popups = document.querySelectorAll('.popup');
+const closeButtons = document.querySelectorAll('.closeButton');
 
-openButton.addEventListener('click', () => {
-    popup.style.display = 'block';
+openButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        for (const popup of popups) {
+            popup.style.display = 'block';
+          }
+    });
 });
 
-popup.addEventListener('click', () => {
-    popup.style.display = 'none';
+popups.forEach(button => {
+    button.addEventListener('click', () => {
+        for (const popup of popups) {
+            popup.style.display = 'none';
+          }
+    });
 });
 
-closeButton.addEventListener('click', () => {
-    popup.style.display = 'none';
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        for (const popup of popups) {
+            popup.style.display = 'none';
+          }
+    });
 });
+
+// openButton.addEventListener('click', () => {
+//     popup.style.display = 'block';
+// });
+
+// popup.addEventListener('click', () => {
+//     popup.style.display = 'none';
+// });
+
+// closeButton.addEventListener('click', () => {
+//     popup.style.display = 'none';
+// });

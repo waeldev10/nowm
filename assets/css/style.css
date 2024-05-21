@@ -276,7 +276,7 @@ form button{
     color: rgb(17, 17, 17,.7);
 }
 /* =============================================== */
-#popup {
+.popup {
     display: none; /* إخفاء النافذة في البداية */
     position: fixed;
     top: 0;
@@ -321,7 +321,7 @@ form button{
 .popup-content span{
     color: #0d885f;
 }
-#closeButton {
+.closeButton {
     display: block;
     width: 100%;
     font-size: 16px;
@@ -334,7 +334,10 @@ form button{
     color: #fff;
     font-family: Almarai-Bold;
 }
-
+.openPopup
+{
+    cursor: pointer;
+}
 
 
 
